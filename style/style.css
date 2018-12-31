@@ -3,8 +3,33 @@
 
 /* HEADER */
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+  margin: 0 auto;
+  background-color: #C4F5FF;
+}
+
 strong {
    font-weight: bold;
+}
+
+header {
+  margin: 0;
+  background-color: rgb(1, 47, 58);  
+}
+
+h1 {
+  color: #FFFFFF;
+  margin: 0px;
 }
 
 hr {
@@ -18,7 +43,6 @@ header {
 h1 {
   padding: 5px;
   margin: 0px;
-  margin-top: 15px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight:100;
   font-size: 60px;
@@ -70,25 +94,60 @@ li {
 li a {
   text-align: center;
   display:inherit;
-  color:gray;
+  color:whitesmoke;
   padding: 25px;
   text-decoration: none;
   overflow:hidden;
 }
 
 li a:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #51E3FF;
   padding-bottom:22px;
 }
 
 #active {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #51E3FF;
   padding-bottom:22px;
-  color:black;
+  color: #51E3FF;
 }
 
 
 /* MAIN CONTENT */
+
+
+.flex-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height:100%;
+}
+
+#julia {
+  max-height: 720px;
+  max-width: 480px;
+  margin:20px;
+}
+
+#text-block {
+  max-width:800px;
+  min-height:100%;
+  align-content: center;
+  vertical-align: middle;
+  margin:20px;
+  display:flex;
+  justify-content:cener;
+  align-items:center;
+}
+
+#text {
+  padding: 20px;
+}
+
+p {
+  margin-top: 20px;
+}
 
 body {
   align-content: center;
