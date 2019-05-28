@@ -15,7 +15,9 @@
 
 html, body {
   margin: 0 auto;
-  background-color: #C4F5FF;
+  /*background-color: rgb(118, 207, 224);*/
+  background-color: rgb(11, 80, 97);
+
 }
 
 strong {
@@ -72,7 +74,7 @@ nav {
   text-align: center;
   padding-bottom: 20px;
 
-  box-shadow: 0 8px 5px -5px grey;
+  box-shadow: 0 8px 5px -5px black;
   width: 100%;
 }
 
@@ -82,16 +84,20 @@ hr {
 }
 
 ul {
+  padding-left: 30px;
+}
+
+nav ul {
   list-style-type: none;
   margin:0px;
   padding:0px;
 }
 
-li {
+nav li {
   display: inline-block;
 }
 
-li a {
+nav li a {
   text-align: center;
   display:inherit;
   color:whitesmoke;
@@ -100,7 +106,7 @@ li a {
   overflow:hidden;
 }
 
-li a:hover {
+nav li a:hover {
   border-bottom: 3px solid #51E3FF;
   padding-bottom:22px;
 }
@@ -124,10 +130,14 @@ li a:hover {
   height:100%;
 }
 
-#julia {
+#julia-block {
   max-height: 720px;
   max-width: 480px;
   margin:20px;
+}
+
+#julia {
+  border-radius:30px;
 }
 
 #text-block {
@@ -142,9 +152,22 @@ li a:hover {
 }
 
 #text {
+  border-radius: 30px;
   padding: 20px;
-  background-color: rgb(11, 80, 97);
   color:#51E3FF;
+  background-color: rgb(11, 80, 97);
+  /*background-color:black;*/
+}
+
+.link_button {
+  border-color:black;
+  border-width:2px;
+  border-style:solid;
+  padding:10px;
+  background-color:rgb(1, 47, 58);
+  color:white;
+  box-shadow: 2;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
